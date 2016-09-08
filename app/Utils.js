@@ -1,9 +1,7 @@
 'use strict';
 
-var angular = require('angular');
-
 (function() {
-  angular.module('angular-utils')
+  window.angular.module('angular-utils')
   .factory('Utils', function Utils() {
     var _this = {};
     _this.guid = function guid() {

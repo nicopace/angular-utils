@@ -1,6 +1,5 @@
 'use strict';
 
-var angular = require('angular');
 var angularUtils = require('./angular-utils');
 
 describe('Geoutils', function() {
@@ -9,7 +8,7 @@ describe('Geoutils', function() {
   });
 
   it('gets injected into angular deps', function() {
-    expect(angular.module('angular-utils')).toBe(angularUtils);
+    expect(window.angular.module('angular-utils')).toBe(angularUtils);
   });
 
 });

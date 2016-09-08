@@ -1,8 +1,6 @@
 'use strict';
 
-var angular = require('angular');
-
-angular.module('angular-utils')
+window.angular.module('angular-utils')
 .directive('thEnter', function() {
   return function(scope, element, attrs) {
     element.bind('keydown keypress', function(event) {

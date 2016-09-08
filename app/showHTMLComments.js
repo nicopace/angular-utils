@@ -1,11 +1,9 @@
 'use strict';
 
-var angular = require('angular');
-
-angular.module('angular-utils')
+window.angular.module('angular-utils')
 .filter('showHTMLComments', function() {
   return function showHTMLComments(input) {
-      if (angular.isString(input)) {
+      if (window.angular.isString(input)) {
         return input.replace(/<!--/, '&lt;!--').replace(/-->/, '--&gt;');
       }
   };

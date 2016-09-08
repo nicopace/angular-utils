@@ -1,8 +1,6 @@
 'use strict';
 
-var angular = require('angular');
-
-var mod = angular.module('angular-utils', []);
+var mod = window.angular.module('angular-utils', []);
 
 require('./showHTMLComments');
 
